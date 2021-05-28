@@ -4,6 +4,10 @@ This project loads a JSON file with COVID-19 vaccination stats and returns data 
 
 For more information about how the Amazon.Lambda.AspNetCoreServer package works and how to extend its behavior view its [README](https://github.com/aws/aws-lambda-dotnet/blob/master/Libraries/src/Amazon.Lambda.AspNetCoreServer/README.md) file in GitHub.
 
+### Data Source ###
+
+Data is pulled directly from [mattwaite](https://github.com/mattwaite/cdc-county-vaccination-data)'s GitHub repository that updates daily with data pulled directly from the CDC API. The request to vaccination data is cached every eight hours to limit the traffic on the GitHub file. The direct url is 
+https://raw.githubusercontent.com/mattwaite/cdc-county-vaccination-data/main/countyvaccinations.json
 
 ### Configuring for API Gateway HTTP API ###
 

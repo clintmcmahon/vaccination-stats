@@ -1,7 +1,6 @@
-# ASP.NET Core Web API Serverless Application
+# Vaccination Stats Web API Serverless Application
 
-This project shows how to run an ASP.NET Core Web API project as an AWS Lambda exposed through Amazon API Gateway. The NuGet package [Amazon.Lambda.AspNetCoreServer](https://www.nuget.org/packages/Amazon.Lambda.AspNetCoreServer) contains a Lambda function that is used to translate requests from API Gateway into the ASP.NET Core framework and then the responses from ASP.NET Core back to API Gateway.
-
+This project loads a JSON file with COVID-19 vaccination stats and returns data as an AWS Lambda exposed through Amazon API Gateway. 
 
 For more information about how the Amazon.Lambda.AspNetCoreServer package works and how to extend its behavior view its [README](https://github.com/aws/aws-lambda-dotnet/blob/master/Libraries/src/Amazon.Lambda.AspNetCoreServer/README.md) file in GitHub.
 
